@@ -1,6 +1,6 @@
 # Software Project Management Team 9's term project repository
 
-## Group Member
+## Group Members
 
 | Name - Surname         | ID        |
 | ---------------------- | --------- |

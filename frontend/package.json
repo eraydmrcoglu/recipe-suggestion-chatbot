@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-plugin-react": "^7.32.2",
     "vite": "^4.2.0"
   }
 }

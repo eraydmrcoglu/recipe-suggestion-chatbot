@@ -1,5 +1,5 @@
-import bot from './assets/bot.svg';
-import user from './assets/user.svg';
+import bot from './assets/bot.png';
+import user from './assets/user.png';
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
@@ -68,7 +68,7 @@ const handleSubmit = async (e) => {
     chatContainer.scrollTop = chatContainer.scrollHeight;
     const messageDiv = document.getElementById(uniqueId)
     loader(messageDiv)
-    const response = await fetch('https://codex-w7h6.onrender.com', {
+    const response = await fetch('http://127.0.0.1:8000/chatgpt/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

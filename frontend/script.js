@@ -1,5 +1,5 @@
-import bot from './assets/bot.png';
-import user from './assets/user.png';
+import bot from './assets/bot.svg';
+import user from './assets/user.svg';
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
@@ -83,9 +83,7 @@ const handleSubmit = async (e) => {
 
     if (response.ok) {
         const data = await response.json();
-        const parsedData = data.bot.trim(); 
-
-        typeText(messageDiv, parsedData)
+        typeText(messageDiv, data)
     } else {
         const err = await response.text()
 

@@ -15,7 +15,6 @@ body {
   width: 100vw;
   height: 100vh;
   background: #09092C;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +26,11 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   -ms-overflow-style: none;
   scrollbar-width: none;
-
   padding-bottom: 20px;
   scroll-behavior: smooth;
 }
@@ -56,7 +52,6 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -106,7 +101,6 @@ form {
   margin: 0 auto;
   padding: 10px;
   background: #4c3686;
-
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -114,10 +108,8 @@ form {
 
 textarea {
   width: 100%;
-
   color: #fff;
   font-size: 18px;
-
   padding: 10px;
   background: transparent;
   border-radius: 5px;
@@ -130,6 +122,19 @@ button {
   border: 0;
   cursor: pointer;
   background: transparent;
+}
+
+button#reset-button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+button#reset-button img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 form img {

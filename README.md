@@ -10,3 +10,16 @@
 | Mehmet Can Özden       | 180706029 |
 | Celal Eray Demircioğlu | 200706904 |
 | Oğuzhan Ekinci         | 170706031 |
+
+
+## Run Project
+
+```shell
+docker-compose -f .\docker-compose.yaml up --build
+```
+
+## Stop Project
+
+```shell
+docker-compose -f .\docker-compose.yaml down
+```

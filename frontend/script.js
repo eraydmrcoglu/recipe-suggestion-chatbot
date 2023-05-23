@@ -9,6 +9,7 @@ let loadInterval;
 function resetForm() {
   form.reset();
   chatContainer.innerHTML = '';
+  chatContainer.innerHTML += chatStripe(true, 'Hello I am Food Recipe Chatbot. How can I help you?', generateUniqueId());
 }
 
 function loader(element) {
@@ -100,3 +101,5 @@ form.addEventListener('keyup', (e) => {
 
 const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', resetForm);
+
+chatContainer.innerHTML += chatStripe(true, 'Hello I am Food Recipe Chatbot. How can I help you?', generateUniqueId());

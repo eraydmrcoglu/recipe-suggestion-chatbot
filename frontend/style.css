@@ -15,7 +15,6 @@ body {
   width: 100vw;
   height: 100vh;
   background: #09092C;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +26,11 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   -ms-overflow-style: none;
   scrollbar-width: none;
-
   padding-bottom: 20px;
   scroll-behavior: smooth;
 }
@@ -49,14 +45,13 @@ body {
 }
 
 .ai {
-  background: #4c3686;
+  background: #33235b;
 }
 
 .chat {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -67,9 +62,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 5px;
-
   background: #5436DA;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,8 +98,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #4c3686;
-
+  background: #33235b;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -114,10 +106,8 @@ form {
 
 textarea {
   width: 100%;
-
   color: #fff;
   font-size: 18px;
-
   padding: 10px;
   background: transparent;
   border-radius: 5px;
@@ -132,7 +122,34 @@ button {
   background: transparent;
 }
 
+button#reset-button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+button#reset-button img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
 form img {
   width: 30px;
   height: 30px;
+}
+
+.navbar {
+  background-color: #1f113f;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar img {
+  height: 80px;
 }

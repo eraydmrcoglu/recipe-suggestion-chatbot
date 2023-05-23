@@ -8,8 +8,7 @@ let loadInterval;
 
 function resetForm() {
   form.reset();
-  chatContainer.innerHTML = '';
-  chatContainer.innerHTML += chatStripe(true, 'Hello I am Food Recipe Chatbot. How can I help you?', generateUniqueId());
+  chatContainer.innerHTML = chatStripe(true, 'Hello I am Food Recipe Chatbot. How can I help you?', generateUniqueId());
 }
 
 function loader(element) {

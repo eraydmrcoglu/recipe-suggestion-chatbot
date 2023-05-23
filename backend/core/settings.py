@@ -135,7 +135,7 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # CORS
-CORS_ORIGIN_WHITELIST = ("http://localhost:5173",)  # Allow requests from localhost:5173
+CORS_ORIGIN_WHITELIST = ("http://localhost:5173", "http://127.0.0.1:5173")  # Allow requests from localhost:5173
 
 # OPENAI
 OPENAI_API_KEY = env("OPENAI_API_KEY")

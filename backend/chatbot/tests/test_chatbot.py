@@ -2,8 +2,7 @@ from unittest.mock import patch
 from chatbot import chatgpt
 
 
-@patch("chatbot.chatgpt.openai.ChatCompletion.create")
-def test_get_chatbot_response(mock_chatbot_response):
+def test_get_chatbot_response(openai_mock):
     chat_history = [
         {
             "role": "user",
@@ -11,7 +10,7 @@ def test_get_chatbot_response(mock_chatbot_response):
         },
     ]
 
-    mock_chatbot_response.return_value = {
+    openai_mock.return_value = {
         "id": "chatcmpl-6p9XYPYSTTRi0xEviKjjilqrWU2Ve",
         "object": "chat.completion",
         "created": 1677649420,

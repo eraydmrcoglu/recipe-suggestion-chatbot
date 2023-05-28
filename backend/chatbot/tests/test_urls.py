@@ -1,5 +1,5 @@
-from django.urls import reverse, resolve
 from chatbot.views import ChatbotView
+from django.urls import resolve, reverse
 
 
 def test_urls():

@@ -1,4 +1,5 @@
 from unittest.mock import patch
+
 from chatbot import chatgpt
 
 
@@ -29,10 +30,7 @@ def test_get_chatbot_response(openai_mock):
     }
 
     response = chatgpt.get_chatbot_response(chat_history)
-    assert (
-        response
-        == "Sure, I'm here to help you with any food recipe-related questions you have!"
-    )
+    assert response == "Sure, I'm here to help you with any food recipe-related questions you have!"
 
 
 @patch("chatbot.chatgpt.openai.ChatCompletion.create")

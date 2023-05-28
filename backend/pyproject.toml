@@ -32,4 +32,3 @@ build-backend = "poetry.core.masonry.api"
 testpaths = ["tests"]
 DJANGO_SETTINGS_MODULE = "core.settings"
 python_files = ["test_*.py", "*_test.py", "tests/*.py"]
-

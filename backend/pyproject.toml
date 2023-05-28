@@ -16,15 +16,19 @@ djangorestframework = "^3.14.0"
 django-cors-headers = "^3.14.0"
 openai = "^0.27.4"
 pytest = "^7.3.1"
+pytest-django = "^4.5.2"
+pytest-cov = "^4.1.0"
 
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^2.17.2"
+ipdb = "^0.13.13"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.4.2"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-DJANGO_SETTINGS_MODULE = "backend.core.settings"
+DJANGO_SETTINGS_MODULE = "core.settings"
+python_files = ["test_*.py", "*_test.py", "tests/*.py"]

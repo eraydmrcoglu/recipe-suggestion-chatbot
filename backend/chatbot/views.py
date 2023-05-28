@@ -37,11 +37,8 @@ class ChatbotView(APIView):
         chatbot_response = get_chatbot_response(chat_history=chat_history)
 
         if "OpenAI API Error" in chatbot_response:
-            return Response(
-                chatbot_response, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+            return Response(chatbot_response, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-        CHATS[session_id].append({"role": "user", "content": prompt})
         CHATS[session_id].append({"role": "assistant", "content": chatbot_response})
 
         response["Access-Control-Allow-Credentials"] = "true"

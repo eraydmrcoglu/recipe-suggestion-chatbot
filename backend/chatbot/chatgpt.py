@@ -24,4 +24,4 @@ def get_chatbot_response(chat_history: list[dict[str, str]]) -> str:
     except Exception as error:
         return f"OpenAI API Error: {error}"
 
-    return response.choices[0]["message"]["content"]
+    return response["choices"][0]["message"]["content"]

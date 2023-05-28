@@ -7,8 +7,7 @@ WORKDIR /code
 
 RUN pip install --no-cache-dir --upgrade pip
 
-COPY pyproject.toml .
-COPY poetry.lock .
+COPY poetry.lock pyproject.toml ./
 
 RUN pip install --no-cache-dir poetry==1.4.2 &&\
     poetry config virtualenvs.create false

@@ -32,12 +32,13 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS: list[str] = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS: list[str] = ["*"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -46,7 +47,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_extensions",
     "rest_framework",
-    "corsheaders",
     "chatbot",
 ]
 
@@ -135,7 +135,9 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # CORS
-CORS_ORIGIN_WHITELIST = ("http://localhost:5173", "http://127.0.0.1:5173")  # Allow requests from localhost:5173
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+SESSION_COOKIE_SAMESITE = "None"
 
 # OPENAI
 OPENAI_API_KEY = env("OPENAI_API_KEY")

@@ -1,6 +1,6 @@
 # Backend
 
-Backend is a Django application that provides a REST API for the frontend application. 
+Backend is a Django application that provides a REST API for the frontend application.
 
 ## Unit test coverage
 
